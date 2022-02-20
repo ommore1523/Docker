@@ -1,0 +1,13 @@
+# when I login to container shell 
+# run command tree inside container 
+# if two cmd commands defined then last one work
+# ["tree"] /new line ["python"]
+# here python will work
+
+
+FROM ubuntu 
+RUN apt-get update 
+RUN apt-get install tree -y
+COPY imgs /root
+WORKDIR /root
+CMD ["tree"]

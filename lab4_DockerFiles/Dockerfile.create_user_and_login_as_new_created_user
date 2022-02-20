@@ -1,0 +1,9 @@
+# Here we will create user named rahul
+# when I will login to container shell 
+# by default i will get rahul user shell
+
+
+FROM ubuntu
+RUN apt-get update
+RUN useradd "rahul" && echo "rahul:pass123" | chpasswd
+USER rahul

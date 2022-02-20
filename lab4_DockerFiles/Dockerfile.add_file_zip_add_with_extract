@@ -1,0 +1,12 @@
+# add and copy command both are same 
+# both used to copy data inside container
+# if data is in zip/tar etc format
+# then add command will extract and copy data to container
+# it will work as wget when we add url in ADD command
+# exp. ADD https://web.com/websit.zip  /root  
+# this will add extracted content to /root path
+
+
+FROM ubuntu
+RUN apt-get update
+ADD docker.tar.gz /root/

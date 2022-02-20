@@ -1,0 +1,9 @@
+# without workdir when i login then i get / path 
+# here we will set workding dir path 
+# when i will login then i will get /root/  path by default
+
+
+FROM ubuntu
+RUN apt-get update
+WORKDIR /root/
+

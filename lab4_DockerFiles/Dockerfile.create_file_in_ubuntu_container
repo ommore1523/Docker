@@ -1,0 +1,7 @@
+# This file will create ubuntu image
+# after creating the container from image 
+# you will see abc text file in its location
+
+FROM ubuntu
+RUN apt-get update
+RUN touch abc

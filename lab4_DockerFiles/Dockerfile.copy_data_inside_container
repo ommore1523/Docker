@@ -1,0 +1,8 @@
+#  Here when I build image it will 
+# copy imgs folder to the /root/ directory
+
+
+FROM ubuntu
+RUN apt-get update
+COPY imgs/  /root/ 
+
