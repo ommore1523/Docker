@@ -1,5 +1,5 @@
 # In this lab we follow the following steps:
-# Note: You can mount also create dir and mount it as volume
+# Note: You can also mount dir 
 
 1. We will create sample `hello world` website using html 
 
